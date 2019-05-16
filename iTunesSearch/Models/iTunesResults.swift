@@ -23,6 +23,6 @@ struct iTunesResults: Decodable {
         case artist = "artistName"
         case track = "trackName"
         case album = "collectionName"
-        case imageURL = "artworkUrl30"
+        case imageURL = "artworkUrl100"
     }
 }

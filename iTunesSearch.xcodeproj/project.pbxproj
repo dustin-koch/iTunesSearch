@@ -13,6 +13,8 @@
 		CAF55588228DC1E90044E81F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF55586228DC1E90044E81F /* LaunchScreen.storyboard */; };
 		CAF55591228DC5350044E81F /* iTunesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF55590228DC5350044E81F /* iTunesResults.swift */; };
 		CAF55593228DC6BB0044E81F /* iTunesResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF55592228DC6BB0044E81F /* iTunesResultsController.swift */; };
+		CAF55597228DDD750044E81F /* iTunesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF55596228DDD750044E81F /* iTunesListViewController.swift */; };
+		CAF55599228DDD9C0044E81F /* iTunesItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF55598228DDD9C0044E81F /* iTunesItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CAF55589228DC1E90044E81F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAF55590228DC5350044E81F /* iTunesResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesResults.swift; sourceTree = "<group>"; };
 		CAF55592228DC6BB0044E81F /* iTunesResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesResultsController.swift; sourceTree = "<group>"; };
+		CAF55596228DDD750044E81F /* iTunesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesListViewController.swift; sourceTree = "<group>"; };
+		CAF55598228DDD9C0044E81F /* iTunesItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				CAF55581228DC1E70044E81F /* Main.storyboard */,
+				CAF5559A228DDDA80044E81F /* View Controllers */,
 				CAF55595228DC6C60044E81F /* Models */,
 				CAF55594228DC6BE0044E81F /* Model Controllers */,
 				CAF5558F228DC2050044E81F /* Resources */,
@@ -89,6 +94,15 @@
 				CAF55590228DC5350044E81F /* iTunesResults.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		CAF5559A228DDDA80044E81F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAF55596228DDD750044E81F /* iTunesListViewController.swift */,
+				CAF55598228DDD9C0044E81F /* iTunesItemTableViewCell.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAF55599228DDD9C0044E81F /* iTunesItemTableViewCell.swift in Sources */,
+				CAF55597228DDD750044E81F /* iTunesListViewController.swift in Sources */,
 				CAF55591228DC5350044E81F /* iTunesResults.swift in Sources */,
 				CAF5557E228DC1E70044E81F /* AppDelegate.swift in Sources */,
 				CAF55593228DC6BB0044E81F /* iTunesResultsController.swift in Sources */,
