@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CAF5557E228DC1E70044E81F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5557D228DC1E70044E81F /* AppDelegate.swift */; };
-		CAF55580228DC1E70044E81F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF5557F228DC1E70044E81F /* ViewController.swift */; };
 		CAF55583228DC1E70044E81F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF55581228DC1E70044E81F /* Main.storyboard */; };
 		CAF55585228DC1E90044E81F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAF55584228DC1E90044E81F /* Assets.xcassets */; };
 		CAF55588228DC1E90044E81F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF55586228DC1E90044E81F /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		CAF5557A228DC1E70044E81F /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF5557D228DC1E70044E81F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAF5557F228DC1E70044E81F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAF55582228DC1E70044E81F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAF55584228DC1E90044E81F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAF55587228DC1E90044E81F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,21 @@
 		CAF5557C228DC1E70044E81F /* iTunesSearch */ = {
 			isa = PBXGroup;
 			children = (
-				CAF5557D228DC1E70044E81F /* AppDelegate.swift */,
-				CAF5557F228DC1E70044E81F /* ViewController.swift */,
+				CAF5558F228DC2050044E81F /* Resources */,
 				CAF55581228DC1E70044E81F /* Main.storyboard */,
+			);
+			path = iTunesSearch;
+			sourceTree = "<group>";
+		};
+		CAF5558F228DC2050044E81F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CAF5557D228DC1E70044E81F /* AppDelegate.swift */,
 				CAF55584228DC1E90044E81F /* Assets.xcassets */,
 				CAF55586228DC1E90044E81F /* LaunchScreen.storyboard */,
 				CAF55589228DC1E90044E81F /* Info.plist */,
 			);
-			path = iTunesSearch;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +140,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAF55580228DC1E70044E81F /* ViewController.swift in Sources */,
 				CAF5557E228DC1E70044E81F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iTunesSearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iTunesSearch/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = iTunesSearch/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/iTunesSearch/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
