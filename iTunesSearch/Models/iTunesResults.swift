@@ -16,8 +16,8 @@ struct iTunesResults: Decodable {
     
     let artist: String
     let track: String
-    let album: String
-    let imageURL: URL
+    let album: String?
+    let imageURL: URL?
     
     enum CodingKeys: String, CodingKey {
         case artist = "artistName"

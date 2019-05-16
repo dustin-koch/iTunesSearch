@@ -45,7 +45,7 @@ class iTunesResultsController {
     }//End of search fetch
     
     static func fetchImageFor(iTunesResult: iTunesResults, completion: @escaping (UIImage?) -> Void ) {
-        let url = iTunesResult.imageURL
+        guard let url = iTunesResult.imageURL else { completion(nil); return }
         
         URLSession.shared.dataTask(with: url) { (data, _, error) in
             if let error = error {
